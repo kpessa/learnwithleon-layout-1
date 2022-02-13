@@ -1,0 +1,36 @@
+nav {
+    padding: 1rem;
+    display: none;
+    position: fixed;
+    height: 100vh;
+    font-family: 'aktiv-grotesk', sans-serif;
+    width: 210px;
+    h1 {
+        color: #fdc006;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        &:hover {
+            cursor: pointer;
+            color: #c59401;
+        }
+    }
+
+    h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        &:hover {
+            cursor: pointer;
+            color: #00a562;
+        }
+    }
+
+    li {
+        font-size: 1.5rem;
+        font-weight: 100;
+
+        &:hover {
+            color: #fdc006;
+        }
+    }
+
+}

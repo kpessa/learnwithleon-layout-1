@@ -1,0 +1,21 @@
+.the-latest {
+    clear: both;
+}
+
+.the-latest article {
+    $size: 35%;
+    div {
+        float: left;
+        width: calc(100% - $size);
+    }
+    
+    .article-text {
+        display: none;
+    }
+
+    img {
+        padding: 0.5rem;
+        float: right;
+        width: $size;
+    }
+}

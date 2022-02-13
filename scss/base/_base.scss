@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+article {
+    &:hover {
+        cursor: pointer;
+        filter: opacity(0.75);
+    }
+    & .author:hover {
+        color: var(--green);
+    }
+}

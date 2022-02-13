@@ -1,0 +1,235 @@
+@import url("https://use.typekit.net/mdk1rbk.css");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --green: #00a562;
+  --orange: #fdc006;
+  --grey: #777;
+  color: #777;
+  font-family: aktiv-grotesk, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+article:hover {
+  cursor: pointer;
+  filter: opacity(0.75);
+}
+article .author:hover {
+  color: var(--green);
+}
+
+header {
+  padding: 1rem;
+}
+header img {
+  cursor: pointer;
+  display: inline-block;
+}
+header img:hover {
+  filter: opacity(0.75);
+}
+header img:nth-of-type(2) {
+  float: right;
+}
+
+nav {
+  padding: 1rem;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  font-family: "aktiv-grotesk", sans-serif;
+  width: 210px;
+}
+nav h1 {
+  color: #fdc006;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+nav h1:hover {
+  cursor: pointer;
+  color: #c59401;
+}
+nav h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+nav h2:hover {
+  cursor: pointer;
+  color: #00a562;
+}
+nav li {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+nav li:hover {
+  color: #fdc006;
+}
+
+main {
+  padding: 0 1rem;
+}
+main h1 {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+main h2 {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+main p {
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.the-latest {
+  clear: both;
+}
+
+.the-latest article div {
+  float: left;
+  width: 65%;
+}
+.the-latest article .article-text {
+  display: none;
+}
+.the-latest article img {
+  padding: 0.5rem;
+  float: right;
+  width: 35%;
+}
+
+@media (min-width: 800px) {
+  .main-article {
+    float: left;
+    width: calc(100% - 210px);
+  }
+
+  .extra-articles {
+    padding-left: 1rem;
+    width: 200px;
+    float: right;
+    line-height: 1.2;
+  }
+
+  .the-latest article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .the-latest article div, .the-latest article .article-text, .the-latest article img {
+    all: revert;
+  }
+  .the-latest article img {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  header {
+    display: none;
+  }
+
+  nav {
+    display: inherit;
+  }
+
+  main {
+    padding-left: 220px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

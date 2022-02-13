@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TechCrunch</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<img src="./logo.png" alt="TechCrunch" />
+			<img src="./hamburger.png" alt="Hamburger icon" />
+		</header>
+		<nav>
+			<img src="./logo.png" alt="TechCrunch" />
+			<h1>Join Extra Crunch</h1>
+			<h2>Log in</h2>
+			<ul>
+				<script>
+					let links = 'Search, Startups, TechCrunch, Audio, Newsletters, Videos, Advertise, Events, More'.split`, `;
+					for (let i = 0; i < links.length; i++) {
+						document.write(`<a href=""><li>${links[i]}</li></a>`);
+					}
+				</script>
+			</ul>
+		</nav>
+		<main>
+			<section class="main-article">
+				<article>
+					<h1 style="margin-bottom: 0; font-size: 2rem">Hopin’ into lessons from Peloton</h1>
+					<h2>Lessons from a startup re-correction</h2>
+					<p class="author">Natasha Mascarenhas</p>
+					<img src="https://techcrunch.com/wp-content/uploads/2020/02/GettyImages-1173715184-1.jpg" alt="Peloton" />
+				</article>
+			</section>
+			<section class="extra-articles">
+				<script>
+					let articles = [
+						{ title: 'This Week in Apps: Microsoft’s app store principles, TikTok’s new safety policies, Apple reveals ‘Tap to Pay’', author: 'Sarah Perez' },
+						{ title: 'TechCrunch+ roundup: Investor warning signs, China’s AV frenzy, 2022 insurtech trends', author: 'Walter Thompson, Ram Iyer' },
+						{ title: 'What does a real economist think of cryptocurrencies?', author: 'John Biggs' },
+						{ title: 'Citing ‘changing real estate market,’ Utah-based Homie lays off one-third of its staff', author: 'Mary Ann Azevedo' },
+					];
+					articles.forEach(article => {
+						document.write(`<hr><article>
+						<h1>${article.title}</h1>
+						<p class='author'>${article.author}</p>
+					</article>`);
+					});
+				</script>
+			</section>
+			<section class="the-latest">
+				<h3>The Latest</h3>
+				<hr />
+				<article>
+					<div>
+						<h1>Fintech Roundup: Proptech’s roller coaster, an ex-Better.com exec’s new gig and Alchemy’s true valuation jump</h1>
+						<p class="author">Mary Ann Azevedo</p>
+						<pre>10:03 AM EST•February 13, 2022</pre>
+					</div>
+
+					<p class="article-text">
+						Welcome to my new weekly fintech focused column. I’ll be publishing this every Sunday, so in between posts, be sure to listen to the Equity podcast and hear Alex Wilhelm, Natasha
+						Mascarenhas and me...
+					</p>
+					<img src="https://techcrunch.com/wp-content/uploads/2014/05/230461728_454833a9e7_o-e1644727260820.jpg?w=430&h=230&crop=1" alt="Proptech" />
+				</article>
+			</section>
+		</main>
+	</body>
+</html>

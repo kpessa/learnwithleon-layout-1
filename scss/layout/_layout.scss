@@ -1,0 +1,41 @@
+@media (min-width: 800px) {
+    .main-article {
+        float: left;
+        width: calc(100% - 210px);
+    }
+    .extra-articles {
+        padding-left: 1rem;
+        width: 200px;
+        float: right;
+        line-height: 1.2;
+    }
+
+
+    .the-latest article {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        div, .article-text, img {
+            all: revert;
+        }
+        img { 
+            width: 100%;
+        }
+
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        display: none;
+    }
+
+    nav {
+        display: inherit;
+    }
+
+    main {
+        padding-left: 220px;
+    }
+}
